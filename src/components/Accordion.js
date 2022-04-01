@@ -4,7 +4,7 @@ import React, {useState} from "react";
 const Accordion = ({ items }) => {
 // As opposed to the way the state property works in class based components, this is how the state property works in functional based components.
 // On the usage of the useState() function, a useState function is assigned a parameter(usually null or "") after being imported. The useState function is an array that contains two items: the first is a variable that denotes the parameter initialzed in the useState function when it is first called. The second is a function that is used to reset the variable during the component's App cycle.
-const [activeIndex, changeIndex] = useState(null)
+const [activeIndex, changeIndex] = useState('active')
   
   const catchMeTheIndex = (index) => {
     console.log(index)
